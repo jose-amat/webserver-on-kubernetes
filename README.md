@@ -55,3 +55,9 @@ The image needs to be in a container registry. In this case we are using the Doc
 ```bash
 $ kubectl apply -f k8s/<filename>.yaml
 ```
+
+### Exposing ReplicaSet
+
+```bash
+$ kubectl port-forward service/webserver 3000:80
+```
