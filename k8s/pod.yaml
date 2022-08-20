@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+  labels:
+    name: webserver
+spec:
+  containers:
+  - name: webserver
+    image: joseamat/webserver
+    ports:
+      - containerPort: 8080
